@@ -10,7 +10,7 @@ class EventController extends Controller
     public function index(){
         $nome = 'Felipe';
         $idade = 18;
-        $estudo = 'Ciencia da Computação';
+        $estudo = 'Ciência da Computação';
 
         $arr = [1,2,3,4,5,6];
 
