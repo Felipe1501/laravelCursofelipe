@@ -22,14 +22,3 @@ Route::get('/enter/login', [EventController::class, 'login']);
 Route::get('/test', function (){
     return view('test');
 });
-
-Route::get('/routes', function (){
-
-    $busca = request('search');
-
-    return view('routes', ['busca' => $busca]);
-});
-
-Route::get('/routes_test/{id?}', function ($id = null){
-    return view('route', ['id' => $id]);
-});
