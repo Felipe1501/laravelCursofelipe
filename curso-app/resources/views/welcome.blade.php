@@ -31,5 +31,28 @@
         @else
         <p>o nome nao é pedro</p>
         @endif
+
+        @for($i = 0; $i < count($arr); $i++)
+                <p>{{$arr[$i]}} - {{$i}}</p>
+                @if($i == 5)
+                <p>o i é 5</p>
+                @endif
+        @endfor
+
+        {{--
+            @php
+                $name = "Felipe";
+                echo $name;
+             @endphp
+        --}}
+
+
+        <!-- comentário -->
+        {{-- comentário com blade --}}
+
+        @foreach($pessoas as $nome)
+                <p>{{$loop->index}}</p>
+                <p>{{$nome}}</p>
+        @endforeach
     </body>
 </html>
