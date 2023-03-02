@@ -38,5 +38,12 @@ Route::get('/test', function (){
 });
 
 Route::get('/routes', function (){
-    return view('routes');
+
+    $busca = request('search');
+
+    return view('routes', ['busca' => $busca]);
+});
+
+Route::get('/routes_test/{id?}', function ($id = null){
+    return view('route', ['id' => $id]);
 });
