@@ -7,3 +7,5 @@
 <h2>testando routes em lavarel!!!</h2>
 <a href="/">voltar para o início</a><br>
 <a href="/test">teste 1</a>
+
+/** php artisan serve */
