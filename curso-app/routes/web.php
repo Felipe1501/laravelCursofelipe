@@ -17,7 +17,7 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create']);
-Route::get('/enter/login', [EventController::class, 'login']);
+Route::post('/events', [EventController::class, 'store']);
 
 Route::get('/test', function (){
     return view('test');
