@@ -191,6 +191,10 @@ h1{
     display: flex;
 }
 
+#description-container{
+    margin-top: 30px;
+}
+
 footer{
     text-align: center;
     background-color: #353e48;
