@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 
 
 class EventController extends Controller
@@ -110,6 +111,8 @@ class EventController extends Controller
     public function destroy($id){
 
         Event::findOrFail($id)->delete();
+
+        DB::table('event_user')->where('event_id', $id)->delete();
 
         return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!!!');
     }

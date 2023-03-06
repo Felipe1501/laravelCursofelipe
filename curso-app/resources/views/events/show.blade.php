@@ -27,7 +27,7 @@
                     Confirmar Presença</a>
                 </form>
                 @else
-                    <p class="already-joined-msg">Você já está participando evento!!!</p>
+                    <p class="already-joined-msg">Você já está participando deste evento!!!</p>
                 @endif
                 <h3>O evento conta com:</h3>
                 <ul id="items-list">
